@@ -3,7 +3,7 @@
 all: build
 
 build:
-	go build -o bin/app ./src/app/main.go
+	go build -o bin/app ./src/cmd/main.go
 
 clean:
 	rm -rf bin/
