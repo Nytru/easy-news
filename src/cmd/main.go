@@ -4,7 +4,7 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/nytru/easy-news/src/internal/cmd"
+	"github.com/nytru/easy-news/src/internal/app"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 )
@@ -32,7 +32,7 @@ func main() {
 			Msg("Fail loading env")
 	}
 
-	err = cmd.NewApp().Run()
+	err = app.NewApp().Run()
 	if err != nil {
 		log.
 			Fatal().
